@@ -1,7 +1,9 @@
+import { URL_BASE } from "../constants";
+
 export const SetTasks = async (item) => {
     try {
         const token = localStorage.getItem('token')
-        const response = await fetch('http://127.0.0.1:8000/api/todos' , {
+        const response = await fetch( `${URL_BASE}/api/api/todos` , {
 
             method:'POST',
             headers: {
