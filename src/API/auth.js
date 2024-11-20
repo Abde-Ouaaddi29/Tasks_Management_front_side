@@ -3,7 +3,7 @@ import { URL_BASE } from "../constants";
 
 export const Register = async (name, email, password)  => {
     try {
-        const response = await fetch(`${URL_BASE}/api/api/register` , {
+        const response = await fetch(`${URL_BASE}/api/register` , {
             method:"POST",
             headers: {
                 "Content-Type": "application/json",
